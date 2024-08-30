@@ -1,0 +1,3 @@
+git clone https://github.com/Mhmd26/JCR Joker
+cd Joker
+python3 -m JoKeRUB
