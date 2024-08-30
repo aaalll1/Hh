@@ -1,16 +1,11 @@
-databases:
-  - name: JokerData
-    ipAllowList: []
-    region: frankfurt
-    plan: free
 services:
   - type: web
     plan: free
-    name: Joker
+    name: Scorpion 
     env: python
     buildCommand: pip install -U -r requirements.txt
     startCommand: python3 ser.py & bash start
-    region: frankfurt
+    region: Singapore #frankfurt #Singapore
     envVars:
       - key: APP_ID 
         value: 9514755
@@ -27,7 +22,4 @@ services:
       - key: TZ
         value: Asia/Baghdad 
       - key: DATABASE_URL
-        fromDatabase:
-          name: JokerData
-          property: connectionString   
-    autoDeploy: false
+        sync: false
