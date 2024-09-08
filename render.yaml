@@ -5,7 +5,7 @@ services:
     env: python
     buildCommand: pip install -U -r requirements.txt
     startCommand: python3 ser.py & bash start
-    region: Frankfurt
+    region: Frankfurt (EU Central)
     envVars:
       - key: APP_ID 
         value: 9514755
